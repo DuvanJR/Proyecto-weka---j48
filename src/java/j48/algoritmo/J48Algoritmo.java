@@ -21,7 +21,7 @@ public class J48Algoritmo {
         System.out.println(decisionJ48( 6 , 148 , 72 , 35 , 0 , 33.6 , 0.627 , 50 ));
     }
     
-    public static double decisionJ48(int Pregnancies, int Glucose, int BloodPressure, int SkinThickness, int Insulin, double BMI, double DiabetesPedigreeFunction, int Age) throws Exception{
+    public static double decisionJ48(double Pregnancies, double Glucose, double BloodPressure, double SkinThickness, double Insulin, double BMI, double DiabetesPedigreeFunction, double Age) throws Exception{
         //Carga el fichero del dataset e inicializa la fuente de datos
         DataSource source = new DataSource("j48/algoritmo/diabetes.arff");
         //Devuelve el conjunto de datos completo

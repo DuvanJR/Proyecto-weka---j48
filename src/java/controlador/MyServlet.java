@@ -83,16 +83,16 @@ public class MyServlet extends HttpServlet {
         String BMI = request.getParameter("bmi"); 
         String DiabetesPedigreeFunction = request.getParameter("diabetesPedigreeFunction"); 
         String Age = request.getParameter("age");
-        String msj = "";
+        String link = "", msj = "";
         int decision = 0;
         
         
         // Convertir los parámetros a números enteros
-        int pregnancies = Integer.parseInt(Pregnancies);
-        int glucose = Integer.parseInt(Glucose);
-        int bloodPressure = Integer.parseInt(BloodPressure);
-        int skinThickness = Integer.parseInt(SkinThickness);
-        int insulin = Integer.parseInt(Insulin);
+        double pregnancies = Double.parseDouble(Pregnancies);
+        double glucose = Double.parseDouble(Glucose);
+        double bloodPressure = Double.parseDouble(BloodPressure);
+        double skinThickness = Double.parseDouble(SkinThickness);
+        double insulin = Double.parseDouble(Insulin);
         double bmi = Double.parseDouble(BMI);
         double diabetesPedigreeFunction = Double.parseDouble(DiabetesPedigreeFunction);
         int age = Integer.parseInt(Age);
@@ -110,14 +110,14 @@ public class MyServlet extends HttpServlet {
             RequestDispatcher reqdis = request.getRequestDispatcher("/output.jsp");
             
             if(decision == 0){ //No
-                
-                msj = "tranquilo no tienes diabetes";
+                link = "resources/img/saludable.png"; 
+                msj = "EL/LA PACIENTE NO TIENE DIABETES";
             }else { //Si
-                
-                msj = "Oh no, si tienes...";
+                link = "resources/img/diabetes.png";    
+                msj = "Oh no, si tienes diabetes, acude a un medico...";
             }
             
-            
+            request.setAttribute("link", link);
             request.setAttribute("msj", msj);
             reqdis.forward(request, response);
         

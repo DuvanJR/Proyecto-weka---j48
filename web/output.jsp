@@ -9,15 +9,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Proyecto Weka</title>
+        <link rel="stylesheet" href="resources/css/bootstrap.css"/>
+        <link rel="stylesheet" href="resources/css/styles.css"/>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="icon" href="resources/icons/diabetes.png">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <!-- Brand/logo -->
             <a class="navbar-brand" href="index.jsp">
-                <img src="resources/icons/dia-nublado.png" height="30" width="" alt="">
-                <span id="brandOne">Weather</span><span id="brandTwo">Predition</span>
+                <img src="resources/icons/diabetes.png" height="30" width="" alt="">
+                <span id="brandOne">Diabetes</span><span id="brandTwo">Predition</span>
             </a>
 
             <!-- Links -->
@@ -39,6 +46,7 @@
         <div class="container" id="output">
             <div class="row justify-content-center">
                 <div class="col-sm-8">
+                    <img id="imgOutput" src="${link}" class="img-fluid mx-auto d-block">
                     <div id="contentOutput">${msj}</div>
                     <a href="index.jsp" class="btn btn-info mx-auto btn-block">Back to Home</a>
                 </div>
@@ -85,7 +93,10 @@
                         <br>
                         <div>
                             <h6><b>Developed by</b></h6>
-                            <i class="fa fa-check-circle" aria-hidden="true"></i> Emily Vanegas <br> 
+                            <i class="fa fa-check-circle" aria-hidden="true"></i> Duvan Jaimes R. <br> 
+                            <i class="fa fa-check-circle" aria-hidden="true"></i> Jose D. Cañavera S.  <br>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i> Karina Suarez J. <br> 
+                            <i class="fa fa-check-circle" aria-hidden="true"></i> Mauricio Guzman S.  
                         </div>
                     </div>
                     <!-- Modal footer -->

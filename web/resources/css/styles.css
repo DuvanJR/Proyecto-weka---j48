@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+/*--------------------------------INDEX--------------------------------*/
+#contentBox{
+    width: 600px;
+    /*border: 1px solid #10707f;*/
+    border-radius: 30px;
+    padding: 20px;
+
+    margin-top: 50px;
+    /*margin-bottom: 80px;*/
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+#footer{
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+#btn{
+
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+
+}
+
+#brandOne{
+    font-size: 25px;
+    font-weight: bold;
+}
+#brandTwo{
+    font-size: 25px;
+    font-weight: lighter;
+}
+a.navbar-brand > img{
+    margin-top: -15px;
+}
+#contentTitle{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #3f3844;
+}
+#contentText{
+    margin-top: -12px;
+}
+/*--------------------------------OUTPUT--------------------------------*/
+#output a{
+    width: 500px;
+}
+#contentOutput{
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: #fff;
+}
+#imgOutput{
+    margin-bottom: 60px;
+    
+    position: relative;
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0%   {
+        left:0px;
+        top:0px;
+    }
+    /*25%  {left:200px; top:0px;}*/
+    30%  {
+        left:400px;
+        top:0px;
+    }
+    60%  {
+        left:0px;
+        top:0px;
+    }
+    /*75%  {left:200px; top:0px;}*/
+    100% {
+        left:-400px;
+        top:0px;
+    }
+}
+
+
+.animated-button {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 12px 32px;
+    background-color: #4285F4;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.animated-button span {
+    position: relative;
+    z-index: 1;
+}
+
+.animated-button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.animated-button:hover:before {
+    height: 100%;
+}
