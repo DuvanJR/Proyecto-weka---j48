@@ -69,16 +69,25 @@ a.navbar-brand > img{
 }
 #contentOutput{
     text-align: center;
-    margin-top: -40px;
+    margin-top: -20px;
     margin-bottom: 30px;
     text-align: center;
     font-weight: bold;
     font-size: 35px;
-    color: #fff;
-}
-#imgOutput{
-    margin-bottom: 60px;
+    font: 280% sans-serif;
+    font-family: "Segoe UI";
+    color: black;
     
+}
+
+p{
+    font: oblique bold 120% cursive;
+    font-family: "Segoe UI";
+}
+
+#imgOutput{
+    margin-top: 25px;
+    margin-bottom: 60px;
     position: relative;
     animation-name: animation;
     animation-duration: 4s;
@@ -93,7 +102,7 @@ a.navbar-brand > img{
     }
     /*25%  {left:200px; top:0px;}*/
     30%  {
-        left:400px;
+        left:230px;
         top:0px;
     }
     60%  {
@@ -102,7 +111,7 @@ a.navbar-brand > img{
     }
     /*75%  {left:200px; top:0px;}*/
     100% {
-        left:-400px;
+        left:-230px;
         top:0px;
     }
 }
@@ -152,3 +161,30 @@ a.navbar-brand > img{
 .animated-button:hover:before {
     height: 100%;
 }
+
+.container {
+    border-radius: 60px;
+}
+
+.escritura-animada {
+  overflow: hidden; /* ocultar el texto completo */
+  border-right: .15em solid orange; /* crear una línea naranja simulando que se está escribiendo */
+  white-space: nowrap; /* evitar que el texto se rompa a una nueva línea */
+  margin: 0;
+    padding: 0;
+  letter-spacing: .15em; /* aumentar ligeramente el espaciado entre letras */
+  animation: escribiendo 3s steps(60, end), blink .7s step-end infinite; /* definir la animación */
+  
+}
+
+/* definir la animación */
+@keyframes escribiendo {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  40% { border-color: orange }
+}
+

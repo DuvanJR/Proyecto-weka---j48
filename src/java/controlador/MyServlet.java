@@ -111,10 +111,10 @@ public class MyServlet extends HttpServlet {
             
             if(decision == 0){ //No
                 link = "resources/img/saludable.png"; 
-                msj = "EL/LA PACIENTE NO TIENE DIABETES";
+                msj = "No tienes diabates";
             }else { //Si
                 link = "resources/img/diabetes.png";    
-                msj = "Oh no, si tienes diabetes, acude a un medico...";
+                msj = "Oh no, si tienes diabetes...";
             }
             
             request.setAttribute("link", link);

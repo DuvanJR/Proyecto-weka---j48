@@ -45,13 +45,19 @@
         <!-- Output Predition -->
         <div class="container" id="output">
             <div class="row justify-content-center">
-                <div class="col-sm-8">
+                <div >
                     <img id="imgOutput" src="${link}" class="img-fluid mx-auto d-block">
-                    <div id="contentOutput">${msj}</div>
-                    <a href="index.jsp" class="btn btn-info mx-auto btn-block">Back to Home</a>
+                    <div id="contentOutput"><p class="escritura-animada" >${msj}</p></div>
+
+                    <button id="btn" type="submit" name="btnVerify" class="animated-button">
+                        <span>
+                            <a href="index.jsp" class="btn mx-auto btn-block" style="color: white; font-family: Segoe UI ">Back to Home</a>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
+                    
         
         <!-- Data Set Modal -->
         <div class="modal fade" id="dataSet">
