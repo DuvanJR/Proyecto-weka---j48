@@ -24,7 +24,7 @@
             <!-- Brand/logo -->
             <a class="navbar-brand" href="index.jsp">
                 <img src="resources/icons/diabetes.png" height="30" width="" alt="">
-                <span id="brandOne">Diabetes</span><span id="brandTwo">Predition</span>
+                <span id="brandOne"> Diabetes </span><span id="brandTwo"> Predition </span>
             </a>
 
             <!-- Links -->

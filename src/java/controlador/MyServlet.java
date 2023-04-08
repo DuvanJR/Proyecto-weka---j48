@@ -111,7 +111,7 @@ public class MyServlet extends HttpServlet {
             
             if(decision == 0){ //No
                 link = "resources/img/saludable.png"; 
-                msj = "No tienes diabates";
+                msj = "No tienes diabetes!!";
             }else { //Si
                 link = "resources/img/diabetes.png";    
                 msj = "Oh no, si tienes diabetes...";

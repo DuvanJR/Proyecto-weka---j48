@@ -5,6 +5,7 @@
 package j48.algoritmo;
 
 
+import weka.classifiers.lazy.IBk;
 import weka.classifiers.trees.J48;
 import weka.core.DenseInstance;
 import weka.core.Instance;
@@ -31,7 +32,7 @@ public class J48Algoritmo {
         dataset.setClassIndex(dataset.numAttributes()-1);
         
         //Crea nuevo objeto J48
-        J48 tree = new J48();
+        IBk tree = new IBk();
         
         //Genera el clasificador a partir de las instancias del dataset
         tree.buildClassifier(dataset);
