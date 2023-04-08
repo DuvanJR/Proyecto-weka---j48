@@ -95,7 +95,7 @@ public class MyServlet extends HttpServlet {
         double insulin = Double.parseDouble(Insulin);
         double bmi = Double.parseDouble(BMI);
         double diabetesPedigreeFunction = Double.parseDouble(DiabetesPedigreeFunction);
-        int age = Integer.parseInt(Age);
+        double age = Integer.parseInt(Age);
         
         J48Algoritmo outcome = new J48Algoritmo();
     

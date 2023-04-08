@@ -46,105 +46,72 @@
 
         <!-- Form Weather Predition -->
         <div class="container" id="contentBox">
-            <form action="MyServlet" method="POST">
+            <form class="form" id="form" action="MyServlet" method="POST">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
                         <div class="form-group" id="contentTitle">
-                            Will the weather be nice tomorrow?
+                            <h1><b>¿Tendré Diabetes?</b></h1>
                         </div>
                         <div class="form-group" id="contentText">
-                            Fill in the form to find out if tomorrow will be a good day to go out and play!
+                            <h4>¡Rellena el formulario para saber si tienes diabetes!</h4>
                         </div>
                         <div class="form-group">
+                            <!-- Campo de Embarazos -->
                             <div class="">
-                                <label for="pregnancies">Pregnancies&nbsp;<i class="fa fa-info-circle" aria-hidden="true" title="cuantos embarazos has tenido?"></i></label>
-                                <select name="pregnancies" class="form-control" required>
-                                    <option value="">Select an option</option>
-                                    <option value="1">1 embarazos</option>
-                                    <option value="6">6 embarazos</option>
-                                    <option value="8">8 embarazos</option>
-                                </select>
+                                <label for="pregnancies"><a >Pregnancies&nbsp;</a><i class="fa fa-info-circle" aria-hidden="true" title="cuantos embarazos has tenido?"></i></label>
+                                <input type="text" name="pregnancies" placeholder="Embarazos.." id="pregnancies" class="form-control" required min="0">
                             </div>
                         </div>
                         <div class="form-group">
+                            <!-- Campo de Glucosa -->
                             <div class="">
                                 <label for="glucose">Glucose ..&nbsp;<i class="fa fa-info-circle" aria-hidden="true" title="glucose?"></i></label>
-                                <input type="number" name="glucose" placeholder="Escribe algo.." id="glucose" class="form-control" required min="0" max="200">
-
-
+                                <input type="text" name="glucose" placeholder="Glucosa.." id="glucose" class="form-control" required min="0">
                             </div>    
                         </div>
                         <div class="form-group">
+                            <!-- Campo de Presion Arterial -->
                             <div class="">
                                 <label for="bloodPressure">BloodPressure&nbsp;<i class="fa fa-info-circle" aria-hidden="true" title="Presión arterial?"></i></label>
-                                <select name="bloodPressure" class="form-control" required>
-                                    <option value="">Select an option</option>
-                                    <option value="66">66</option>
-                                    <option value="72">72</option>
-                                    <option value="64">64</option>
-                                </select>
+                                <input type="text" name="bloodPressure" placeholder="Presion Arterial.." id="bloodPressure" class="form-control" min="0">
                             </div>
                         </div>
                         <div class="form-group">
+                            <!-- Campo de Grosor de la Piel -->
                             <div class="">
                                 <label for="skinThickness">SkinThickness&nbsp;<i class="fa fa-info-circle" aria-hidden="true" title="Grosor de la piel?"></i></label>
-                                <select name="skinThickness" class="form-control" required>
-                                    <option value="">Select an option</option>
-                                    <option value="29">29</option>
-                                    <option value="35">35</option>
-                                    <option value="35">35</option>
-                                    <option value="0">0</option>
-                                    <option value="23">23</option>
-                                </select>
+                                <input type="text" name="skinThickness" placeholder="Grosor de la Piel.." id="skinThickness" class="form-control" min="0">
                             </div>
                         </div>
                         <div class="form-group">
+                            <!-- Campo de Insulina -->
                             <div class="">
                                 <label for="insulin">Insulin&nbsp;<i class="fa fa-info-circle" aria-hidden="true" title="insulina?"></i></label>
-                                <select name="insulin" class="form-control" required>
-                                    <option value="">Select an option</option>
-                                    <option value="0">0</option>
-                                    <option value="94">94</option>
-                                </select>
+                                <input type="text" name="insulin" placeholder="Insulina.." id="insulin" class="form-control" required min="0">
                             </div>
                         </div>
                         <div class="form-group">
+                            <!-- Campo de Indice Masa Corporal -->
                             <div class="">
                                 <label for="bmi">Bmi&nbsp;<i class="fa fa-info-circle" aria-hidden="true" title="bmi?"></i></label>
-                                <select name="bmi" class="form-control" required>
-                                    <option value="">Select an option</option>
-                                    <option value="26.6">26.6</option>
-                                    <option value="33.6">33.6</option>
-                                    <option value="23.3">23.3</option>
-                                    <option value="28.1">28.1</option>
-                                </select>
+                                <input type="text" name="bmi" step="any" placeholder="Indice Masa Corporal.." id="bmi" class="form-control" min="0" required >
                             </div>
                         </div>
                         <div class="form-group">
+                            <!-- Campo de Función de pedigrí de diabetes -->
                             <div class="">
                                 <label for="diabetesPedigreeFunction">DiabetesPedigreeFunction&nbsp;<i class="fa fa-info-circle" aria-hidden="true" title="antecedentes con diabetes?"></i></label>
-                                <select name="diabetesPedigreeFunction" class="form-control" required>
-                                    <option value="">Select an option</option>
-                                    <option value="0.351">0.351</option>
-                                    <option value="0.627">0.627</option>
-                                    <option value="0.167">0.167</option>
-                                    <option value="0.627">0.672</option>
-                                </select>
+                                <input type="text" name="diabetesPedigreeFunction" step="any" placeholder="Función Pedigrí de Diabetes.." id="diabetesPedigreeFunction" class="form-control" min="0" required >
                             </div>
                         </div>
                         <div class="form-group">
+                            <!-- Campo de Edad -->
                             <div class="">
                                 <label for="age">Age&nbsp;<i class="fa fa-info-circle" aria-hidden="true" title="edad?"></i></label>
-                                <select name="age" class="form-control" required>
-                                    <option value="">Select an option</option>
-                                    <option value="31">31</option>
-                                    <option value="50">50</option>
-                                    <option value="32">32</option>
-                                    <option value="21">21</option>
-                                </select>
+                                <input type="text" name="age" placeholder="Edad.." id="age" class="form-control" required min="0">
                             </div>
                         </div>
-                        <button id="btn" type="submit" name="btnVerify" class="animated-button"><span>Submit</span></button>
+                        <button disabled="" id="btn" type="submit" name="btnVerify" class="animated-button"><span>Enviar</span></button>
                     </div>
                 </div>
             </form>
@@ -182,9 +149,8 @@
                     <!-- Modal body -->
                     <div class="modal-body">
                         <div class="text-justify">
-                            This is a Java Web program that uses the <i>J48 classification algorithm</i> 
-                            and the data set <i>diabetes.arff</i> to predict if there will be good 
-                            weather to go out and play.
+                            Este es un programa web Java que utiliza el algoritmo de clasificación J48 y el conjunto de datos 
+                            <i>diabetes.arff</i> para predecir si una mujer puede tener diabetes o si está completamente sana.
                         </div>
                         <br>
                         <div>
@@ -201,7 +167,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </div>
 
         <footer id="footer"><p>Trabajo Weka Prediccion</p></footer>

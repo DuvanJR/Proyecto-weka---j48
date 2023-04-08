@@ -4,6 +4,7 @@
  */
 package j48.algoritmo;
 
+
 import weka.classifiers.trees.J48;
 import weka.core.DenseInstance;
 import weka.core.Instance;
@@ -18,7 +19,7 @@ public class J48Algoritmo {
     
     public static void main(String[] args) throws Exception {
         // TODO code application logic here
-        System.out.println(decisionJ48( 6 , 148 , 72 , 35 , 0 , 33.6 , 0.627 , 50 ));
+        //System.out.println(decisionJ48( 6 , 148 , 72 , 35 , 0 , 33.6 , 0.627 , 50 ));
     }
     
     public static double decisionJ48(double Pregnancies, double Glucose, double BloodPressure, double SkinThickness, double Insulin, double BMI, double DiabetesPedigreeFunction, double Age) throws Exception{
